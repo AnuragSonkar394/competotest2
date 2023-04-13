@@ -1,12 +1,13 @@
 
 
 import dotenv from "dotenv";
+import mongoose from "mongoose";
+import { Express } from "express";
 
-const mongoose= require('mongoose');
-const express = require('express');
 const app = express();
 dotenv.config({ path: './config.env'});
-require('./db/conn');
+import "./db/conn";
+
 
 app.use(express.json());
 
