@@ -2,7 +2,7 @@
 
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import { Express } from "express";
+import { express } from "express";
 
 const app = express();
 dotenv.config({ path: './config.env'});
