@@ -6,8 +6,8 @@ import { Express } from "express";
 
 const app = express();
 dotenv.config({ path: './config.env'});
-import "./db/conn";
 
+require('./db/conn');
 
 app.use(express.json());
 
